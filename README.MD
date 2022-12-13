@@ -1,4 +1,4 @@
 https://www.figma.com/file/WBPqvoU8wZWWzmZSpZKu3P/TeddySwap?node-id=0%3A1&t=vB4UBW0FpU5OUnT0-0
-# Tedyy Swap
+# Teddy Swap
  live demo
 https://saturn-labs.netlify.app/
