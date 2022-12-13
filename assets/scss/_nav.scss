@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+.navbar-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	transition: all 0.3s ease-out 0s;
+}
+
+.navbar {
+	padding: 0;
+	position: relative;
+	transition: all 0.3s ease-out 0s;
+	padding: 17px 0;
+@media only screen and (max-width: 991px) {
+ padding: 10px 0px;
+}
+	@media (max-width: 767px) {
+		padding: 8px 0;
+	}
+	@media (max-width: 482px) {
+		padding: 8px 0;
+	}
+
+	.navbar-brand {
+		padding: 0;
+		text-decoration: none;
+		img {
+			height: 65px;
+			transition: all 0.4s ease-in-out;
+			@media only screen and (max-width: 767px) {
+				height: 55px;
+			}
+			@media only screen and (max-width: 482px) {
+				height: 50px;
+			}
+		}
+	}
+}

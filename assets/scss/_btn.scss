@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+# sec-t
+--------------------------------------------------------------*/
+.sec-t {
+	text-align: center;
+  margin-bottom: 40px;
+	h2 {
+		font-size: 35px;
+		font-weight: 700;
+    color: #A5ECC1;
+    background: linear-gradient(87.65deg, #A5ECC1 -8.44%, #00ADE3 97.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 767px) {
+     font-size: 30px;
+    }
+    @media only screen and (max-width: 482px) {
+     font-size: 27px;
+    }
+	}
+  p{
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    @media only screen and (max-width: 767px) {
+     font-size: 16px;
+     font-weight: 500;
+    }
+    @media only screen and (max-width: 482px) {
+      max-width: 260px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
