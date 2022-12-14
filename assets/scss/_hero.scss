@@ -127,6 +127,9 @@
 		border-radius: 20px;
 		text-align: center;
 		height: 100%;
+    @media only screen and (max-width: 482px) {
+      padding: 64px 30px 50px 30px;
+    }
 		.why-img {
 			width: 100%;
 			height: 170px;
@@ -137,8 +140,8 @@
         margin-bottom: 35px;
 			}
 			@media only screen and (max-width: 767px) {
-				height: 130px;
-				margin-bottom: 26px;
+				height: 150px;
+				margin-bottom: 33px;
 			}
 		}
 		h4 {
