@@ -323,20 +323,26 @@ h6 a {
 .navbar .navbar-brand {
   padding: 0;
   text-decoration: none;
+  padding-top: 12px;
+}
+@media only screen and (max-width: 767px) {
+  .navbar .navbar-brand {
+    padding-top: 8px;
+  }
 }
 .navbar .navbar-brand img {
-  height: 65px;
+  height: 35px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 @media only screen and (max-width: 767px) {
   .navbar .navbar-brand img {
-    height: 55px;
+    height: 30px;
   }
 }
 @media only screen and (max-width: 482px) {
   .navbar .navbar-brand img {
-    height: 50px;
+    height: 30px;
   }
 }
 
@@ -836,7 +842,8 @@ h6 a {
   max-width: 270px;
 }
 .main-footer .footer-logo-w .footer-logo {
-  max-height: 70px;
+  max-height: 35px;
+  margin-bottom: 13px;
 }
 .main-footer .footer-logo-w p {
   font-size: 14px;
