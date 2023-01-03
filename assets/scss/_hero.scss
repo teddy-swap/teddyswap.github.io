@@ -73,6 +73,8 @@
 
 .hero-btns {
 	display: flex;
+  margin-left: -8px;
+	margin-right: -8px;
 	@media only screen and (max-width: 991px) {
 		justify-content: center;
 	}
@@ -84,13 +86,16 @@
 	display: inline-flex;
 	justify-content: center;
 	text-align: center;
+  margin-left: 8px;
+	margin-right: 8px;
   background: linear-gradient(269.21deg, #44B7E9 -62.88%, #00B695 173.99%);
 	color: #fff;
 	font-size: 15px;
 	font-weight: 600;
 	border-radius: 10px;
 	border: 0;
-	padding: 8px 28px;
+	padding: 8px 20px;
+  min-width: 170px;
 	transition: all 0.2s ease-in;
 	&:hover {
 		box-shadow: 0 3px 20px 0px rgba(95, 167, 250, 0.52);
@@ -100,6 +105,10 @@
 		align-self: center;
 		margin-top: 16px;
 	}
+}
+.btn-2 {
+	background: linear-gradient(97.68deg, #7452bd 16.12%, #1a68ff 102.09%);
+  border-radius: 10px;
 }
 
 
