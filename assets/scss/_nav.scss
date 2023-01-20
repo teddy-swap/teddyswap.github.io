@@ -43,4 +43,90 @@
 			}
 		}
 	}
+
+
+
+  .btn-toggle{
+    border: 0;
+    background-color: transparent;
+    &::after{
+      display: none;
+    }
+    img{
+      height: 20px;
+    }
+  }
+
+  .t-drop{
+    .dropdown-menu{
+      background-color: #1A282E;
+      border: 0;
+      padding: 16px 4px;
+      li{
+        &:not(:last-child) {
+        margin-bottom: 10px;
+        }
+      }
+      a{
+        text-decoration: none;
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all .3s ease-in;
+        &:hover{
+          background-color: transparent;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
+
+}
+
+
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1.1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1.1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
 }
