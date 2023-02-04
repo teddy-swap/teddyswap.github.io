@@ -323,12 +323,6 @@ h6 a {
 .navbar .navbar-brand {
   padding: 0;
   text-decoration: none;
-  padding-top: 12px;
-}
-@media only screen and (max-width: 767px) {
-  .navbar .navbar-brand {
-    padding-top: 8px;
-  }
 }
 .navbar .navbar-brand img {
   height: 35px;
@@ -925,6 +919,180 @@ h6 a {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   background-color: #23343b;
+}
+
+/*--------------------------------------------------------------
+# body-new-css
+--------------------------------------------------------------*/
+.body-new-css {
+  background: radial-gradient(143.12% 189.23% at 52.24% 61.83%, rgba(0, 200, 255, 0.0496) 0%, rgba(21, 57, 73, 0) 100%), radial-gradient(106.4% 51.48% at 19.21% 50%, rgba(0, 67, 167, 0.1) 0%, rgba(23, 50, 62, 0) 100%), linear-gradient(227.98deg, rgba(43, 138, 159, 0.3) 8.54%, rgba(23, 50, 62, 0) 35.73%), linear-gradient(108.84deg, #153b49 8.33%, #0f273d 128.76%);
+}
+.body-new-css .header .navbar-area {
+  background: rgba(30, 30, 30, 0.84);
+}
+
+/*--------------------------------------------------------------
+# fisco
+--------------------------------------------------------------*/
+.page-title {
+  text-align: center;
+}
+.page-title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1199px) {
+  .page-title h1 {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .page-title h1 {
+    font-size: 27px;
+    margin-bottom: 28px;
+  }
+}
+
+.fisco {
+  padding-top: 125px;
+  min-height: 100vh;
+  position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .fisco {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .fisco {
+    padding-top: 90px;
+  }
+}
+
+.fisco-wrapper .page-teddy {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 100%;
+  max-width: 250px;
+  z-index: -1;
+}
+@media only screen and (max-width: 1399px) {
+  .fisco-wrapper .page-teddy {
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .fisco-wrapper .page-teddy {
+    max-width: 170px;
+    right: 5%;
+  }
+}
+
+.fis-block {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0e0e0e;
+  padding: 30px 30px;
+  border-radius: 22px;
+}
+@media only screen and (max-width: 767px) {
+  .fis-block {
+    padding: 25px 25px;
+  }
+}
+.fis-block .fis-t {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.fis-block .fis-t h3 {
+  font-size: 21px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 991px) {
+  .fis-block .fis-t h3 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .fis-block .fis-t h3 {
+    font-size: 16px;
+  }
+}
+.fis-block .fis-t h3 br {
+  /** Small devices (landscape phones, 576px and up) **/
+}
+@media (min-width: 576px) {
+  .fis-block .fis-t h3 br {
+    display: none;
+  }
+}
+.fis-block .fis-t span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), linear-gradient(90.99deg, #2f749b 21.23%, #2a8fa0 356.28%);
+  padding: 2px 26px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 7px;
+}
+@media only screen and (max-width: 991px) {
+  .fis-block .fis-t span {
+    font-size: 13px;
+    padding: 2px 18px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .fis-block .fis-t span {
+    font-size: 12px;
+    padding: 2px 14px;
+  }
+}
+.fis-block .form-control {
+  background-color: #1a1a1a;
+  border-color: #424242;
+  border-radius: 12px;
+  padding: 0.575rem 0.75rem;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+.fis-block .btn-submit {
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: none;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), linear-gradient(90.99deg, #2f749b 21.23%, #2a8fa0 356.28%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 20px;
+  border-radius: 12px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.fis-block .btn-submit:hover, .fis-block .btn-submit:focus {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), linear-gradient(30.99deg, #326e91 21.23%, #165e6b 356.28%);
+}
+@media only screen and (max-width: 767px) {
+  .fis-block .btn-submit {
+    padding: 16px 20px;
+  }
 }
 
 /*--------------------------------------------------------------
