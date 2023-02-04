@@ -1142,14 +1142,19 @@ h6 a {
   padding: 0;
 }
 .fis-block .fis-t .span-btn {
+  text-decoration: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  border: 0;
+  outline: none;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), linear-gradient(90.99deg, #2f749b 21.23%, #2a8fa0 356.28%);
   padding: 2px 26px;
   color: #fff;
   font-size: 14px;
   border-radius: 7px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 @media only screen and (max-width: 991px) {
   .fis-block .fis-t .span-btn {
@@ -1162,6 +1167,11 @@ h6 a {
     font-size: 12px;
     padding: 2px 14px;
   }
+}
+.fis-block .fis-t .span-btn:hover {
+  -webkit-box-shadow: 0 3px 20px 0px rgba(95, 167, 250, 0.32);
+          box-shadow: 0 3px 20px 0px rgba(95, 167, 250, 0.32);
+  color: #fff;
 }
 .fis-block .form-control {
   background-color: #1a1a1a;

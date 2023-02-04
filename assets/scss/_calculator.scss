@@ -211,7 +211,10 @@
 		}
 
 		.span-btn {
+      text-decoration: none;
 			display: inline-flex;
+      border: 0;
+      outline: none;
 			background: linear-gradient(
 					0deg,
 					rgba(0, 0, 0, 0.36),
@@ -230,6 +233,11 @@
 				font-size: 12px;
 				padding: 2px 14px;
 			}
+      transition: all .2s ease-in;
+      &:hover{
+        box-shadow: 0 3px 20px 0px rgba(95, 167, 250, 0.32);
+        color: #fff;
+      }
 		}
 	}
 	.form-control {
