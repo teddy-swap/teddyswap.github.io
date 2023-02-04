@@ -930,7 +930,103 @@ h6 a {
 .body-new-css .header .navbar-area {
   background: rgba(30, 30, 30, 0.84);
 }
+.body-new-css .header .navbar-area .navbar {
+  padding: 12px 0;
+}
+.body-new-css .header .navbar-area .navbar .navbar-brand {
+  padding: 0;
+  text-decoration: none;
+}
+.body-new-css .header .navbar-area .navbar .navbar-brand img {
+  height: 30px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+@media only screen and (max-width: 767px) {
+  .body-new-css .header .navbar-area .navbar .navbar-brand img {
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .body-new-css .header .navbar-area .navbar .navbar-brand img {
+    height: 30px;
+  }
+}
+.body-new-css .t-drop .dropdown-menu {
+  background-color: #0e0e0e;
+  border: 0;
+  padding: 16px 4px;
+}
+.body-new-css .t-drop .dropdown-menu li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.body-new-css .t-drop .dropdown-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #EAFFFC;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.body-new-css .t-drop .dropdown-menu a:hover, .body-new-css .t-drop .dropdown-menu a:focus {
+  background-color: transparent;
+  color: #00B695;
+}
+.body-new-css .t-drop .dropdown-menu a img {
+  height: 20px;
+  min-width: 23px;
+  margin-right: 6px;
+}
 
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+.animate {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(1.1rem);
+            transform: translateY(1.1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1.1rem);
+            transform: translateY(1.1rem);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
 /*--------------------------------------------------------------
 # fisco
 --------------------------------------------------------------*/
@@ -1040,7 +1136,12 @@ h6 a {
     display: none;
   }
 }
-.fis-block .fis-t span {
+.fis-block .fis-t h3 span {
+  color: #5aff0c;
+  background: none;
+  padding: 0;
+}
+.fis-block .fis-t .span-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1051,13 +1152,13 @@ h6 a {
   border-radius: 7px;
 }
 @media only screen and (max-width: 991px) {
-  .fis-block .fis-t span {
+  .fis-block .fis-t .span-btn {
     font-size: 13px;
     padding: 2px 18px;
   }
 }
 @media only screen and (max-width: 482px) {
-  .fis-block .fis-t span {
+  .fis-block .fis-t .span-btn {
     font-size: 12px;
     padding: 2px 14px;
   }
@@ -1092,6 +1193,41 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .fis-block .btn-submit {
     padding: 16px 20px;
+  }
+}
+
+.frm-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), linear-gradient(90.99deg, #2f749b 21.23%, #2a8fa0 356.28%);
+  border-radius: 16px;
+  text-align: center;
+  padding: 15px 15px;
+  min-height: 130px;
+}
+@media only screen and (max-width: 767px) {
+  .frm-result {
+    min-height: 100px;
+  }
+}
+.frm-result h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 767px) {
+  .frm-result h5 {
+    font-size: 20px;
   }
 }
 
