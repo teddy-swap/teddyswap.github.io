@@ -570,6 +570,8 @@ h6 a {
       padding-bottom: 80px;
       padding-left: 10px;
       padding-right: 10px; } }
+  .community .teddy-img {
+    border-radius: 12px; }
   .community .com-single {
     display: block;
     width: 100%;
@@ -865,6 +867,8 @@ h6 a {
       margin-bottom: 13px; }
     .main-footer .footer-logo-w p {
       font-size: 14px; }
+  .main-footer .teddy {
+    border-radius: 5px; }
 
 .footer-links h5 {
   font-size: 17px;
